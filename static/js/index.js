@@ -1,5 +1,11 @@
 // 基于准备好的dom，初始化echarts实例
 var myChart = echarts.init(document.getElementById('main'));
+var data = ""
+$(document).ready(function(){
+    $.getJSON("/jsondata",function(rs){
+        data = rs.name;
+    });
+});
 
 // 指定图表的配置项和数据
 option = {
@@ -17,8 +23,8 @@ option = {
             name: '业务指标',
             type: 'gauge',
             detail: {formatter:'{value}%'},
-            data: [{value: 50, name: '完成率'}]
-//            data: [{value: 50, name: ss}]
+//            data: [{value: 50, name: '完成率'}]
+            data: [{value: 50, name: data}]
         }
     ]
 };

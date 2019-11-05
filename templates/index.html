@@ -16,11 +16,5 @@
     </h1>
 </div>
 <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
-<script>
-    $.getJSON("{{ url_for('.send_json') }}",
-    function(data){
-    alert(data.a);
-    });
-</script>
-<!--<div id="main" style="width:800px;height:400px;"></div>-->
+<div id="main" style="width:800px;height:400px;"></div>
 {% endblock %}

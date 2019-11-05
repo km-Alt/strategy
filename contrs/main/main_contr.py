@@ -16,10 +16,11 @@ def index():
     return render_template('index.html')
 
 
-@main.route('/json', methods=['GET', 'POST'])
+# 为js中echart提供数据
+@main.route('/jsondata', methods=['GET', 'POST'])
 def send_json():
-    ss = {'a': 'qwer'}
-    return json.dumps(ss)
+    jsondata = {'name': 'qwer', 'company': 'yh'}
+    return json.dumps(jsondata)
 
 
 @main.route('/admin')
