@@ -1,5 +1,6 @@
 .idea
 .vscode
+.DS_Store
 # Python:
 *.py[cod]
 *.so
@@ -8,3 +9,4 @@
 dist
 build
 __pycache__
+strategy_venv
