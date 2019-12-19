@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-
 from config import db
 from models.users import User
 from models.roles import Role

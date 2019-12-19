@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 from flask import render_template, redirect, url_for, flash, request, session, make_response
 from contrs.main import main
 from config import db
